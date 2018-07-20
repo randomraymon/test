@@ -1,0 +1,165 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	background-color: black;
+}
+
+@font-face{
+	font-family: bigJohn;
+	src: url("BIGJOHN.otf");
+}	
+
+
+#header{
+	padding-top: 80px;
+
+}
+
+
+
+h1{
+	font-family: bigJohn;
+	font-size: 6rem;
+	color: white;
+	text-align: center;
+	line-height: 6rem;
+
+}
+
+h2{
+	font-family: bigJohn;
+	font-size: 3rem;
+	line-height: 3rem;
+	color: white;
+	text-align: center;
+}
+
+#firstrow{
+	overflow: hidden;
+
+}
+
+
+.firstleft{
+	position: relative;
+	top: 0;	
+	height: 100vh;
+	-webkit-transition: all 1s linear;
+	-moz-transition: all 1s linear;
+	-ms-transition: all 1s linear;
+	-o-transition: all 1s linear;
+	transition: all 1s linear;
+	
+}
+
+.firstleft.up{
+	top: -110vh;
+	opacity: 0;
+}
+
+.splitimage{
+	width: 50vw;
+
+}
+
+.splitimage_horizontal{
+	width: 100vw;
+
+}
+
+
+
+
+.firstright{
+	position: relative;
+	top: 0;	
+	height: 100vh;
+	-webkit-transition: all 1s linear;
+	-moz-transition: all 1s linear;
+	-ms-transition: all 1s linear;
+	-o-transition: all 1s linear;
+	transition: all 1s linear;
+}
+
+.firstright.down{
+	top: 110vh;
+	opacity: 0;
+	
+}
+
+
+
+.secondleft{
+	position: relative;
+	height: 100vh;
+	left:-60vw;
+	opacity: 0;
+	-webkit-transition: all 1s linear;
+	-moz-transition: all 1s linear;
+	-ms-transition: all 1s linear;
+	-o-transition: all 1s linear;
+	transition: all 1s linear;
+	
+}
+
+.secondright{
+	position: relative;
+	height: 100vh;
+	left: 60vw;
+	opacity: 0;
+	-webkit-transition: all 1s linear;
+	-moz-transition: all 1s linear;
+	-ms-transition: all 1s linear;
+	-o-transition: all 1s linear;
+	transition: all 1s linear;
+
+}
+
+.inleft{
+	left: 0;
+	opacity: 1;
+
+}
+
+.inright{
+	left: 0;
+	opacity: 1;
+}
+
+
+.thirdhigh{
+	position: relative;
+	top: 100vh;
+	opacity: 0;
+	-webkit-transition: all 1s linear;
+	-moz-transition: all 1s linear;
+	-ms-transition: all 1s linear;
+	-o-transition: all 1s linear;
+	transition: all 1s linear;
+
+}
+
+.thirdlow{
+	position: relative;
+	top: -100vh;
+	opacity: 0;
+	-webkit-transition: all 1s linear;
+	-moz-transition: all 1s linear;
+	-ms-transition: all 1s linear;
+	-o-transition: all 1s linear;
+	transition: all 1s linear;
+
+}
+
+.thirdinhigh{
+	top: 0;
+	opacity: 1;
+
+}
+
+.thirdinlow{
+	top: 0;
+	opacity: 1;
+
+}

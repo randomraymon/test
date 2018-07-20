@@ -1,0 +1,416 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+	
+
+body{
+
+width: 100%;
+height: 100%;
+font-family: 'Fira Sans', sans-serif;
+
+
+}
+
+/* --------------------- Intro  */
+
+.icon{
+	font-size: 3rem;
+	animation-name: pulsate;
+	animation-delay: 2s;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+
+}
+
+@keyframes pulsate{
+
+	0% {opacity: 1;}
+	50% {opacity: 0.2;}
+	100% {opacity: 1;}
+
+}
+
+.icon2{
+	text-align: center;
+	font-size: 3rem;
+
+}
+
+
+.intro_container{
+	height: 100vh;
+	width: 100vw;
+	
+}
+
+.intro_end{
+	display: none;
+}
+
+.frame1{
+	text-align: center;
+	
+	
+	
+
+}
+
+.frame2{
+	
+	display: none;
+	text-align: center;
+	
+	
+
+}
+
+.frame3{
+	display: none;
+	text-align: center;
+	
+	
+
+}
+
+.frame4{
+	opacity: 0;
+	text-align: center;
+	
+	
+
+}
+
+.visible{
+	opacity: 1;
+}
+
+
+/* --------------------- Welcome Screen  */
+
+
+.welcome{
+	display: none;
+	background-position: center top;
+	background-repeat:no-repeat; 
+	height: 100vh;
+	overflow: hidden;
+	
+	
+	
+}
+
+.about{
+	cursor: pointer;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+
+}
+
+
+
+
+.aboutbox{
+	margin-top: 5rem;
+	height: 35vh;
+	display: none;
+	overflow: scroll;
+}
+
+#portrait{
+	width: 18rem;
+}
+
+.fullheight{
+	height: 100%;
+	
+}
+
+.overviewimage{
+	margin: 0;
+	padding: 0;
+	z-index: 2;
+	object-fit: cover;
+	width: 100%;
+	top:0;
+	left:0;
+	overflow: hidden;
+
+}
+
+
+.circle{
+	z-index: 0;
+	margin-left: 40vw;
+	margin-right: 40vw;
+	border-style: solid;
+	border-color: black;
+	border-width: 0.2em;
+	border-radius: 100%;
+	width: 20vw;
+	height: 20vw;
+	overflow: visible
+}
+
+.info{
+	position: relative;
+	margin-top: 3rem;
+	z-index: 2;
+	text-align: center;
+	
+}
+
+h1{
+	
+	font-family: 'Fira Sans';
+	text-transform: uppercase;
+	font-style: bold;
+	font-weight: 500;
+	font-size: 8rem;
+}
+
+h2{
+	
+	font-family: 'Fira Sans';
+	text-transform: uppercase;
+	font-weight: 100;
+	font-size: 1.3rem;
+	margin-top: -30px;
+
+}
+
+h3{
+	font-family: 'Fira Sans';
+	
+	font-size: 1.3rem;
+}
+
+p{
+	text-align: center;
+	margin-left: 40px;
+	font-weight: 100;
+
+}
+
+#aboutme{
+	margin-top: 1.8rem;
+	text-align: justify;
+}
+
+h4{
+	font-family: 'Fira Sans';
+	font-weight: bold;
+	font-size: 2rem;
+	text-transform: uppercase;
+
+
+}
+
+h5{
+	font-family: 'Fira Sans';
+	font-size: 1rem;
+	font-weight: 100;
+	text-transform: uppercase;
+}
+
+/* small settings for about */
+
+@media screen and (max-width: 39.9375em) {
+	
+#firsttitel{
+
+	margin-top: 2rem;
+}
+	 
+	h1{
+		text-align: center;
+		font-family: 'Fira Sans';
+		font-style: italic;
+		font-weight: 500;
+		font-size: 1.2rem;
+	}
+	
+	h3{
+		text-align: center;
+		font-family: 'Fira Sans';
+		font-weight: 100;
+		font-size: 2rem;
+	}
+
+	.aboutbox{
+
+		height: 60vh;
+	}
+
+}
+
+
+
+@media screen and (min-width: 64em) {
+
+	/* #titel{
+		position: absolute;
+		top: 55vh;
+		z-index: 1;
+		height: 20vh;
+		margin-left: 50vw;
+		margin-right: auto;
+		overflow: hidden;
+
+	}
+	 */
+
+
+}
+
+
+
+@media screen and (max-width: 39.9375em) {
+
+/* #titel{
+		position: absolute;
+		top: 44vh;
+		z-index: 1;
+		height: 5vh;
+		margin-left: 25vw;
+		margin-right: auto;
+		overflow: hidden;
+
+	} */
+
+
+
+}
+
+
+
+
+#logo{
+	padding-top: 2.2vw;
+	z-index: 1;
+	height: 17vw;
+	display: block;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+
+
+
+
+/* --------------------- Sketchbook Screen  */
+
+.content{
+	
+	height: 120vh;
+}
+
+
+.equality{
+	margin-left: 2em;
+	margin-right: 2em;
+	position: relative;
+    top: 0;
+    left: 0;
+    z-index: 5;
+
+}
+
+/* large */
+
+@media screen and (min-width: 64em) {
+
+	.box{
+	
+		background-color: lightgrey;	
+		margin-top: 2em;
+		padding: 0;
+		border-style: solid;
+		border-width: 5px;
+		border-color: lightgrey;
+		
+		
+	
+	
+	}
+}
+
+#mandala{
+	opacity: 0.6;
+	z-index: 0;
+	width: 80vw;
+	height: auto;
+	position: absolute;
+	overflow: hidden;
+	animation-name: mandala1;
+	animation-delay: 2s;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	
+}
+
+@keyframes mandala1{
+
+	0% {opacity: 0.6;}
+	50% {opacity: 0.2;}
+	100% {opacity: 0.6;}
+
+}
+
+/* medium */
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) { 
+
+
+	.box{
+	
+		background-color: lightgrey;	
+		margin-top: 2em;
+		padding: 0;
+		border-style: solid;
+		border-width: 5px;
+		border-color: lightgrey;
+		
+		
+	
+	
+	}
+
+
+}
+
+
+
+
+/* small */
+
+
+
+@media screen and (max-width: 39.9375em) {
+	
+	
+	.box{
+	
+		background-color: lightgrey;	
+		margin-top: 2em;
+		padding: 0;
+		border-style: solid;
+		border-width: 5px;
+		border-color: lightgrey;
+		
+		
+	
+	
+	}
+
+
+}
+
+/* ------------- foundation overwrite */
+
+/* .grid-margin-x {
+	margin-left: -2rem;
+	margin-right: -2rem; } */
+
+

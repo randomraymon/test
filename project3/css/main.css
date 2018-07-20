@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+@font-face{
+	font-family: bigJohn;
+	src: url("BIGJOHN.otf");
+}	
+
+h1.pagetitel{
+	font-family: bigJohn;
+	font-weight: normal;
+	font-size: 2rem;		/* egal was der parent hat -> immer 16 pixel */
+	letter-spacing: -0.1rem;
+
+}
+
+.firstsection{
+	margin-top: 100px;
+
+
+}
+
+
+ /* css blend modes */ 
+
+ 
+h1.hoch{
+	font-family: bigJohn;
+	font-weight: normal;
+	font-size: 16vw;
+	writing-mode: vertical-lr;
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+	margin: 0;
+	line-height: 100%;
+
+
+}
+
+.offset{
+	-webkit-transform: translate(-150vw,0);
+	transform: translate(-150vw,0);
+	z-index: 1;
+	position: relative;
+	-webkit-transition: all 1s linear;
+	-moz-transition: all 1s linear;
+	-ms-transition: all 1s linear;
+	-o-transition: all 1s linear;
+	transition: all 1s linear;
+
+}
+
+.offset.in{
+	-webkit-transform: translate(8.333%,0);
+	transform: translate(8.333%,0);
+	
+
+}
+
+section#bahnhof{
+	overflow: hidden;
+	background-image: url("../img/P-004-1-17-9.jpg");
+	width: 100vw;
+	
+	background-size: cover;
+}
+
+img{
+	width: 100%;
+	
+}
+
+#greenoverlay{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background-color: #3CE37E;
+	opacity: 0.5;
+}
+
+#middlebox{
+	opacity: 0;
+	z-index: 0;
+	position: relative;
+	top: -500px;
+	left: 0px;
+	-webkit-transition: all 1s linear;
+	-moz-transition: all 1s linear;
+	-ms-transition: all 1s linear;
+	-o-transition: all 1s linear;
+	transition: all 1s linear;
+}
+
+
+#middlebox.inview{
+	opacity: 1;
+	top: 0px;
+}
+
+#placeholder{
+	width: 100%;
+}

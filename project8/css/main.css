@@ -1,0 +1,117 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+@font-face{
+	font-family: bigJohn;
+	src: url("BIGJOHN.otf");
+}	
+
+
+
+
+.clippyshape{
+	z-index: 0;
+	display: inline-block;	
+	margin-top: 20vh;
+	margin-left: auto;
+	margin-right: auto;
+	height: 60vh;
+	width: 60vh;
+	background-color: rgb(194, 11, 255);
+	-webkit-clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+	clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+	animation-name: shapechanger;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+.clippyshape2{
+	position: absolute;
+	z-index: 1;
+	top: 20vh;
+	left: 18vw;
+	right: auto;
+	mix-blend-mode: luminosity;
+	height: 60vh;
+	width: 60vh;
+	background-color: rgb(17, 255, 200);
+	-webkit-clip-path: -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+	clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+	animation-name: shapechanger2;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+
+.screenfit{
+
+	height: 100vh;
+	text-align: center;
+}
+
+
+
+
+
+@keyframes sizechange {
+	0%{height: 60vh;}
+	0%{width: 60vh;}
+	50%{height: 80vh;}
+	50%{width: 80vh;}
+	100%{height: 60vh;}
+	100%{width: 60vh;}
+}
+
+@keyframes shapechanger {
+	0% {-webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+		clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%););}
+	0% {height: 60vh;
+		width: 60vh;}	
+
+	30% {-webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+		clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);}
+
+	50% {height: 80vh;
+		width: 80vh;}	
+			
+			
+	60% {-webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+		clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);}
+
+	100% {-webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+			clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%););}
+
+	100% {height: 60vh;
+			width: 60vh;}			
+}
+
+@keyframes shapechanger2 {
+	0% {-webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+		clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);}
+
+	0% {background-color: rgb(17, 255, 200);}	
+	0% {left: 18vw;}
+	0% {mix-blend-mode: luminosity;}
+
+	25% {mix-blend-mode: color-burn;}
+
+	50% {-webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+		clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);}
+
+	50% {background-color: red }	
+	50% {left: 32vw;}
+	50% {mix-blend-mode: multiply;}
+
+	75% {mix-blend-mode: screen;}
+
+	100% {-webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+		clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);}
+
+	100% {left: 18vw;}
+
+	100% {  background-color:  rgb(17, 255, 200)}
+	100% {mix-blend-mode: luminosity;}
+
+}
